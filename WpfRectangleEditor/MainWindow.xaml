@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfRectangleEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfRectangleEditor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="CanvasBase"
+                Background="Transparent">
+            <Canvas.ContextMenu>
+                <ContextMenu x:Name="ContextMenuCanvas">
+                    <!--<MenuItem Header="選択" Name="Select" Click="ContextMenuCanvas_Click"></MenuItem>
+                    <MenuItem Header="新規作成" Name="Create" Click="ContextMenuCanvas_Click"></MenuItem>-->
+                    <MenuItem Header="形状変更" Name="Edit" Click="ContextMenuCanvas_Click"></MenuItem>
+                    <MenuItem Header="移動" Name="Move" Click="ContextMenuCanvas_Click"></MenuItem>
+                    <MenuItem Header="削除" Name="Delete" Click="ContextMenuCanvas_Click"></MenuItem>
+                </ContextMenu>
+            </Canvas.ContextMenu>
+        </Canvas>
+    </Grid>
+</Window>
